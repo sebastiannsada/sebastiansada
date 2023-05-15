@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Web</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bb0e38d256.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/2.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>I'm <span>Sebastian</span><br>Sada Alfred</h1>
+                    <p>Welcome to my official portfolio website
+                        <br>Inilah Jalan Ninjaku
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+          <div class="row mt-4">
+            <div class="about-col-1">
+              <img src="images/photo1.jpg">
+            </div>
+      
+            <div class="about-col-2">
+              <h1 class="subtext">About Me</h1>
+              <p>Hi, my name is Sebastian and I am currently a second year student in the Faculty of Computer Science & Information System taking the Computational Science course in UNIMAS. My favorite hobbies are listening to music and playing guitar. Music is one of the most important and powerful things in my life. My life without melodies and harmonies would be totally empty. Listening to and playing different tunes helps me de-stress, relax, and can also motivate me in trying times.</p>
+              <h1 class="subtext">Quotes of The Day</h1>
+              <p>Tidak marah apalagi benci, hanya saja mulai diam diri</p>
+              <p>Kerana banyaknya rasa peduli yang tidak pernah dihargai</p>
+              <p>Inilah jalan ninjaku. Sekian, terima kasih</p>
+                <div class="row">
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills',event)">Bio</p>
+                  <p class="tab-links" onclick="opentab('experience',event)">Fun Facts</p>
+                  <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                </div>
+              </div>
+          
+              <div class="row">
+                <div class="tab-contents" id="skills">
+                  <ul>
+                    <li><span>Name</span><br>Sebastian Sada Anak Alfred</li>
+                    <li><span>Age</span><br>21 years old</li>
+                    <li><span>Date of Birth</span><br>02 December 2002</li>
+                    <li><span>Place of Birth</span><br>Miri, Sarawak</li>
+                    <li><span>Race</span><br>Iban</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li><span>1.</span><br>I love to listen to music and play guitar</li>
+                    <li><span>2.</span><br>I enjoy playing video games in my free time</li>
+                    <li><span>3.</span><br>I'm a big fan of Chelsea Football Club</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li><span>UPSR (2009-2014)</span><br>SK RIAM BATU 2</li>
+                    <li><span>PT3 & SPM (2015-2019)</span><br>SMK LOPENG TENGAH</li>
+                    <li><span>MATRICULATION (2020-2021)</span><br>KOLEJ MATRIKULASI LABUAN (KML)</li>
+                    <li><span>DEGREE (2021- ongoing)</span><br>UNIVERSITI MALAYSIA SARAWAK (UNIMAS)</li>
+                  </ul>
+                </div></div>  
+          </div>
+      
+          
+          </div>
+        </div>
+      </div>
+      
+      
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sebastian11sada@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>017-2510212</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sebastian.sada.12"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sebastiannsada/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/sebastiannsada"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sebastian-sada-anak-alfred-58b065228/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@sebastiannsada"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a href="images/cs.jpg" class="btn btn2">Click Me</a>
+            </div>
+    
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sebastian Sada Anak Alfred</p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+    </script>
+    
+    
+
+    </body>
+</html>
